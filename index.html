@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title id="pageTitle">Geolocation</title>
+
+<link rel="stylesheet" type="text/css" href="css/lab3StyleSheet.css" /> 
+
+</head>
+
+<body>	
+	<header>
+		<h1>Great Circle Distance Calculation</h1>
+	</header>
+	
+	<div class="container" role="main">
+		
+		<section id="dropBox"><input id="fileInput" type="file" onchange="processFiles(this.files)"></section>
+		
+		<section>
+			<div class="c1">Enter a set of custom coordinates: <input type="text" id="customLocation"></div>
+			<button class="c2" type="button" onclick="customLocation()">Use Custom Location</button>
+			<button class="c3" type="button" onclick="currentLocation()">Use Current Location</button>
+		</section>
+
+		<section id="myGeolocation"></section>
+		
+		<section id="fileLocation"></section>
+		
+		<section id="distance"></section>
+		
+		<section id="mapLocation"></section>
+		
+	</div>
+	<footer> © 2019, Rehan Hajee<br /></footer>
+	
+	<script src="js/lab3.js"></script>
+	</body>
+</html>
